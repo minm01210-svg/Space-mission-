@@ -1,0 +1,154 @@
+﻿{
+    "generated_utc":  "2026-11-11T10:50:52.2777688Z",
+    "source_api":  "https://ccmc.gsfc.nasa.gov/DONKI-API",
+    "source_spec":  "C:/Users/ASUS/Downloads/api-1.json",
+    "start_date":  "2024-01-01",
+    "end_date":  "2026-11-11",
+    "request_window":  "two months maximum per request",
+    "endpoints":  [
+                      {
+                          "name":  "notifications",
+                          "csv_file":  "csv/notifications.csv",
+                          "csv_records":  2569,
+                          "raw_response_files":  21
+                      },
+                      {
+                          "name":  "wsa_enlil_simulations",
+                          "csv_file":  "csv/wsa_enlil_simulations.csv",
+                          "csv_records":  3377,
+                          "raw_response_files":  21
+                      },
+                      {
+                          "name":  "sep",
+                          "csv_file":  "csv/sep.csv",
+                          "csv_records":  214,
+                          "raw_response_files":  18
+                      },
+                      {
+                          "name":  "rbe",
+                          "csv_file":  "csv/rbe.csv",
+                          "csv_records":  92,
+                          "raw_response_files":  19
+                      },
+                      {
+                          "name":  "mpc",
+                          "csv_file":  "csv/mpc.csv",
+                          "csv_records":  36,
+                          "raw_response_files":  16
+                      },
+                      {
+                          "name":  "ips",
+                          "csv_file":  "csv/ips.csv",
+                          "csv_records":  350,
+                          "raw_response_files":  20
+                      },
+                      {
+                          "name":  "hss",
+                          "csv_file":  "csv/hss.csv",
+                          "csv_records":  184,
+                          "raw_response_files":  21
+                      },
+                      {
+                          "name":  "gst",
+                          "csv_file":  "csv/gst.csv",
+                          "csv_records":  62,
+                          "raw_response_files":  16
+                      },
+                      {
+                          "name":  "flr",
+                          "csv_file":  "csv/flr.csv",
+                          "csv_records":  1940,
+                          "raw_response_files":  21
+                      },
+                      {
+                          "name":  "cme",
+                          "csv_file":  "csv/cme.csv",
+                          "csv_records":  4572,
+                          "raw_response_files":  42
+                      },
+                      {
+                          "name":  "cme_analysis",
+                          "csv_file":  "csv/cme_analysis.csv",
+                          "csv_records":  3804,
+                          "raw_response_files":  21
+                      }
+                  ],
+    "missing_request_windows":  [
+                                    {
+                                        "endpoint":  "sep",
+                                        "start_date":  "2025-07-01",
+                                        "end_date":  "2025-08-31"
+                                    },
+                                    {
+                                        "endpoint":  "sep",
+                                        "start_date":  "2026-03-01",
+                                        "end_date":  "2026-04-30"
+                                    },
+                                    {
+                                        "endpoint":  "sep",
+                                        "start_date":  "2026-11-01",
+                                        "end_date":  "2026-11-11"
+                                    },
+                                    {
+                                        "endpoint":  "rbe",
+                                        "start_date":  "2024-01-01",
+                                        "end_date":  "2024-02-29"
+                                    },
+                                    {
+                                        "endpoint":  "mpc",
+                                        "start_date":  "2024-07-01",
+                                        "end_date":  "2024-08-31"
+                                    },
+                                    {
+                                        "endpoint":  "mpc",
+                                        "start_date":  "2025-07-01",
+                                        "end_date":  "2025-08-31"
+                                    },
+                                    {
+                                        "endpoint":  "mpc",
+                                        "start_date":  "2025-09-01",
+                                        "end_date":  "2025-10-31"
+                                    },
+                                    {
+                                        "endpoint":  "mpc",
+                                        "start_date":  "2026-11-01",
+                                        "end_date":  "2026-11-11"
+                                    },
+                                    {
+                                        "endpoint":  "ips",
+                                        "start_date":  "2026-11-01",
+                                        "end_date":  "2026-11-11"
+                                    },
+                                    {
+                                        "endpoint":  "gst",
+                                        "start_date":  "2024-01-01",
+                                        "end_date":  "2024-02-29"
+                                    },
+                                    {
+                                        "endpoint":  "gst",
+                                        "start_date":  "2024-07-01",
+                                        "end_date":  "2024-08-31"
+                                    },
+                                    {
+                                        "endpoint":  "gst",
+                                        "start_date":  "2024-11-01",
+                                        "end_date":  "2024-12-31"
+                                    },
+                                    {
+                                        "endpoint":  "gst",
+                                        "start_date":  "2025-07-01",
+                                        "end_date":  "2025-08-31"
+                                    },
+                                    {
+                                        "endpoint":  "gst",
+                                        "start_date":  "2026-11-01",
+                                        "end_date":  "2026-11-11"
+                                    }
+                                ],
+    "limitations":  [
+                        "The API rejected some request windows; missing windows are listed explicitly.",
+                        "Nested arrays/objects in CSVs are retained as compact JSON text.",
+                        "DONKI is research/prototyping space-weather data, not an operational launch-weather feed.",
+                        "These files do not replace vehicle specs, ephemerides, trajectory optimization, or landing dynamics data."
+                    ]
+}
