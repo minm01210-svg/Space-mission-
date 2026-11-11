@@ -1,0 +1,5 @@
+body_id,name,body_type,parent_id,mu_km3_s2,mean_radius_km,equatorial_radius_km,mass_kg,surface_gravity_m_s2,rotation_period_h,orbital_period_days,semi_major_axis_au,eccentricity,reference_source
+earth,Earth,planet,sun,398600.4418,6371.0084,6378.1363,5.97219e24,9.80665,23.9344696,365.256,1.00000011,0.01671022,JPL SSD / NASA NSSDC
+moon,Moon,moon,earth,4902.800066,1737.4,1738.1,7.342e22,1.62,655.728,27.321661,0.0025696,0.0549,JPL SSD / NASA NSSDC
+mars,Mars,planet,sun,42828.375,3389.5,3396.2,6.4171e23,3.71,24.6229,686.98,1.52371034,0.0933941,JPL SSD / NASA NSSDC
+sun,Sun,star,,132712440018,695700,696340,1.9885e30,274.0,609.12,,0,0,JPL SSD / NASA NSSDC

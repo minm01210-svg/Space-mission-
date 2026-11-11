@@ -1,0 +1,4 @@
+epoch_utc,body_id,reference_frame,central_body,x_km,y_km,z_km,vx_km_s,vy_km_s,vz_km_s,position_source,quality_status,notes
+2026-01-01T00:00:00Z,earth,ICRF,sun,,,,,,,JPL Horizons,template,Fill from Horizons for the selected mission epoch
+2026-01-01T00:00:00Z,moon,ICRF,earth,,,,,,,JPL Horizons,template,Fill from Horizons or SPICE using the same epoch and frame
+2026-01-01T00:00:00Z,mars,ICRF,sun,,,,,,,JPL Horizons,template,Fill from Horizons for the selected mission epoch

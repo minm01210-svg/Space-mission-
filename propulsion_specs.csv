@@ -1,0 +1,9 @@
+propulsion_id,name,propulsion_type,thrust_vac_n,thrust_sea_level_n,isp_vac_s,isp_sea_level_s,power_w,dry_mass_kg,propellant,source_authority,source
+rs25d,RS-25D,chemical,2279000,,,,,,LOX/LH2,official,NASA SLS reference page
+f1,F-1,chemical,,6770000,,,,,LOX/RP-1,official,NASA Apollo 11 Press Kit
+j2,J-2,chemical,1033000,,,,,,LOX/LH2,official,NASA Apollo 11 Press Kit
+rd180,RD-180,chemical,,3830000,,311,,,LOX/RP-1,official,ULA Atlas V specification
+be4,BE-4,chemical,,2446521.89,,,,,LOX/LNG,official,ULA Vulcan Centaur specification
+nstar,NSTAR,electric,0.092,,3300,,2300,,xenon,official,NASA NTRS 19980017550
+next,NEXT,electric,0.236,,4190,,6900,13.5,xenon,official,NASA NTRS 20090004685
+bpt4000,BPT-4000,electric,0.254,,2150, ,4500,,xenon,official,NASA NTRS 20060051789

@@ -1,0 +1,2 @@
+spacecraft_id,name,dry_mass_kg,payload_mass_kg,propellant_mass_kg,tank_residual_mass_kg,isp_s,thrust_n,engine_count,reference_area_m2,cd,available_power_w,initial_epoch_utc,initial_body,initial_orbit_id,target_body,target_orbit_id,notes
+scout_001,Team spacecraft,,,,,,,,,,,2026-01-01T00:00:00Z,earth,leo400,mars,mars400_circular,Fill the blank engineering inputs before running the mission check

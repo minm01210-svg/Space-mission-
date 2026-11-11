@@ -1,0 +1,5 @@
+burn_id,sequence,phase,origin_body,origin_orbit_id,destination_body,destination_orbit_id,burn_type,planned_dv_m_s,burn_duration_s,engine_system_id,propellant_mass_used_kg,epoch_utc,status,notes
+burn_001,1,departure,earth,leo400,moon,moon100,trans_lunar_injection,,,team_chemical_main,,,planned,Populate from the trajectory solver
+burn_002,2,arrival,moon,moon100,moon,moon100,lunar_orbit_insertion,,,team_chemical_main,,,planned,Landing team begins after stable orbit if landing is selected
+burn_003,3,departure,earth,leo400,mars,mars400_circular,trans_mars_injection,,,team_chemical_main,,,planned,Populate for the selected launch window
+burn_004,4,arrival,mars,mars400_circular,mars,mars400_circular,mars_orbit_insertion,,,team_chemical_main,,,planned,No entry or landing burn included

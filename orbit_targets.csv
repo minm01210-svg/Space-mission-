@@ -1,0 +1,6 @@
+orbit_id,body_id,orbit_name,orbit_type,altitude_km,periapsis_altitude_km,apoapsis_altitude_km,inclination_deg,eccentricity,reference_notes,source
+leo400,earth,400 km LEO,circular,400,400,400,28.5,0,Earth mean-radius reference orbit,derived preliminary reference
+moon100,moon,100 km lunar orbit,circular,100,100,100,90,0,Target lunar polar-orbit placeholder; change inclination for mission design,team design input
+mars400_1sol,mars,400 km Mars orbit,elliptical,400,400,17030,0,0.687,400 km x 1-sol orbit; replace apoapsis with the desired mission value,team design input
+mars400_circular,mars,400 km circular orbit,circular,400,400,400,0,0,Simple Mars orbital target for preliminary sizing,team design input
+earth_geo,earth,GEO reference orbit,circular,35786,35786,35786,0,0,Earth geostationary-altitude sanity-check target,derived preliminary reference

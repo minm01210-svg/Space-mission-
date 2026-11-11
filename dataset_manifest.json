@@ -1,0 +1,34 @@
+{
+  "dataset_name": "Launch Travel Orbit Mission Dataset",
+  "version": "1.0",
+  "scope": ["launch", "propulsion", "interplanetary travel", "orbit insertion"],
+  "excluded_scope": ["atmospheric entry", "parachutes", "heat shields", "powered landing", "terrain"],
+  "files": {
+    "celestial_bodies.csv": "Earth, Moon, Mars, and Sun constants",
+    "launch_vehicle_specs.csv": "Launch vehicle mass, thrust, size, and payload references",
+    "propulsion_specs.csv": "Chemical and electric propulsion reference fields",
+    "spacecraft_input_template.csv": "Blank spacecraft design input row",
+    "orbit_targets.csv": "Starting and destination orbit definitions",
+    "transfer_reference.csv": "Preliminary transfer delta-v and time references",
+    "source_register.csv": "NASA, JPL, and Kaggle source register",
+    "planetary_ephemeris_template.csv": "Epoch-specific state-vector input template",
+    "launch_site_specs.csv": "Preliminary launch site coordinates and azimuth ranges",
+    "rocket_stage_specs.csv": "Stage-level mass, thrust, Isp, and burn inputs",
+    "spacecraft_propulsion.csv": "Spacecraft propulsion system inputs",
+    "mission_burn_plan.csv": "Mission departure and orbit-insertion burn plan",
+    "atmospheric_properties.csv": "Preliminary atmosphere values for ascent drag",
+    "validation_cases.csv": "Analytical and historical validation cases"
+  },
+  "data_classes": {
+    "official": "Copied or normalized from cited NASA, JPL, ULA, or ESA source material",
+    "aggregator": "Launch Library 2 community-curated record; validate before final use",
+    "derived": "Computed from verified constants using ideal two-body or patched-conic equations",
+    "team design input": "Placeholder selected by the project team and must be justified"
+  },
+  "recommended_validation": [
+    "JPL Horizons for epoch-dependent planetary positions and velocities",
+    "NASA NAIF SPICE for high-precision geometry",
+    "NASA GMAT for independent trajectory and orbit propagation checks",
+    "Kaggle launch datasets for historical launch-record cross-checks only"
+  ]
+}

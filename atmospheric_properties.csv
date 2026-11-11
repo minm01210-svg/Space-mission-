@@ -1,0 +1,7 @@
+body_id,model_name,altitude_km,temperature_k,pressure_pa,density_kg_m3,speed_of_sound_m_s,scale_height_km,model_status,source,quality_status,notes
+earth,standard_atmosphere,0,288.15,101325,1.225,340.3,8.434,reference,US Standard Atmosphere 1976,reference,Useful for preliminary ascent drag; not weather or launch-day data
+earth,standard_atmosphere,10,223.15,26436,0.4135,299.5,8.434,reference,US Standard Atmosphere 1976,reference,Interpolate only within the model range
+earth,standard_atmosphere,50,270.65,79.78,0.001027,329.8,8.434,reference,US Standard Atmosphere 1976,reference,Upper-atmosphere values need a thermosphere model
+mars,exponential_reference,0,210,600,0.020,229.0,10.7,approximation,NASA Mars atmosphere fact sheet,derived,Seasonal and altitude variation are not represented
+mars,exponential_reference,10,210,232,0.0077,229.0,10.7,approximation,NASA Mars atmosphere fact sheet,derived,Use a validated Mars-GRAM model for high-fidelity entry work
+moon,none,0,0,0,0,0,0,reference,NASA Moon Fact Sheet,reference,No practical atmosphere; landing dynamics handled separately

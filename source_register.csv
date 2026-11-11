@@ -1,0 +1,8 @@
+source_id,source_class,title,organization_or_publisher,url,used_for,authority_note,license_or_usage_note
+NASA_SLS,NASA,Space Launch System reference page,NASA,https://www.nasa.gov/reference/space-launch-system/,SLS mass thrust height and lunar payload,official agency source,Check NASA reuse terms
+NASA_PLANETS,NASA,Planetary Fact Sheets,NASA GSFC NSSDC,https://nssdc.gsfc.nasa.gov/planetary/planetfact.html,Earth Moon Mars physical constants and comparison values,official NASA catalog,Values can be updated as research changes
+NASA_MARS,NASA,Mars Fact Sheet,NASA GSFC NSSDC,https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html,Mars GM radius gravity rotation and atmosphere references,official NASA catalog,Values can be updated as research changes
+JPL_HORIZONS,JPL,Horizons ephemeris system,NASA JPL SSD,https://ssd.jpl.nasa.gov/horizons/,epoch-dependent planet Moon and spacecraft positions,authoritative ephemeris service,Use the requested epoch and reference frame explicitly
+NAIF_SPICE,JPL,SPICE observation geometry system,NASA JPL NAIF,https://naif.jpl.nasa.gov/naif/index,high-precision geometry and kernels,official NASA/JPL tool,Review NAIF support and data rules
+NASA_GMAT,NASA,General Mission Analysis Tool,NASA Software Catalog,https://software.nasa.gov/software/GSC-19640-1,independent trajectory propagation and mission analysis,official NASA software,Open-source project with its own terms
+KAGGLE_SPACEX,Kaggle,SpaceX Launch Data,Steven Coleman,https://www.kaggle.com/scoleman/spacex-launch-data,historical launch payload and outcome cross-checks,community dataset; source states Wikipedia-derived,Check Kaggle dataset card and CC BY-SA 3.0 terms

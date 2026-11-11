@@ -1,0 +1,7 @@
+vehicle_id,name,active,liftoff_mass_kg,liftoff_thrust_n,height_m,diameter_m,leo_payload_kg,gto_payload_kg,tli_payload_kg,reference_orbit_notes,source_authority,source
+saturn_v,Saturn V,false,2941219.93,34046038.80,110.6,10.1,,,,Apollo 11 configuration; payload fields not recorded,official,NASA Apollo 11 Press Kit
+sls_b1,SLS Block 1,true,2608000,39100000,98.0,8.4,,,27000,TLI payload is a lower-bound statement from NASA,official,NASA Space Launch System reference page
+atlas_v_551,Atlas V 551,false,,,,,18850,8900,,LEO reference: 200 km circular at 28.7 deg; GTO: 35786 x 185 km at 27 deg,official,ULA Atlas V performance page
+vulcan_vc6,Vulcan Centaur VC6,true,,,,5.4,27200,14500,11500,LEO reference: 200 km circular at 28.7 deg; TLI value from ULA table,official,ULA Vulcan Centaur performance page
+ariane64,Ariane 64,false,,,,,21650,11500,,Reference conditions should be checked against the current ESA performance document,official,ESA Ariane 6 overview
+falcon9_block5,Falcon 9 Block 5,true,549000,7607000,70.0,3.65,22800,8300,,,aggregator,Launch Library 2; verify current mission configuration

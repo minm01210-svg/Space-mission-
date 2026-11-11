@@ -1,0 +1,4 @@
+stage_id,stage_number,name,propellant,stage_dry_mass_kg,propellant_mass_kg,initial_mass_kg,thrust_vac_n,isp_vac_s,burn_time_s,engine_count,throttle_min_fraction,stage_role,source,quality_status,notes
+team_stage_1,1,Team first stage,LOX/RP-1,,,,,,,1,0.6,booster,team design input,required,Complete from the selected launch vehicle
+team_stage_2,2,Team upper stage,LOX/LH2,,,,,,,1,0.4,orbital_injection,team design input,required,Complete before using the rocket equation
+sls_b1_core,1,SLS Block 1 core stage,LOX/LH2,130000,1530000,1660000,39100000,421,480,4,0.0,booster,NASA SLS reference page,reference,Approximate configuration reference; validate against the mission vehicle

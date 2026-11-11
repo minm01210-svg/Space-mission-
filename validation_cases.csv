@@ -1,0 +1,4 @@
+case_id,mission,origin_orbit,destination_orbit,reference_departure_date,reference_arrival_date,reference_transfer_days,reference_total_dv_m_s,validation_level,source,expected_use,notes
+case_earth_moon_apollo,Apollo-class lunar transfer,leo400,moon100,1969-07-16,1969-07-19,3,3900,order_of_magnitude,NASA Apollo mission documentation,Check Moon transfer timing and delta-v,Not a direct reproduction of Apollo guidance
+case_earth_mars_hohmann,Ideal Earth-Mars Hohmann,leo400,mars400_circular,,,259,5650,analytical,JPL orbital constants,Check patched-conic solver,Launch windows and actual arrival conditions are omitted
+case_earth_geo,LEO to GEO reference,leo400,earth_geo,,,0.22,3860,analytical,Derived from Earth GM and radii,Check Earth orbit transfer,Use as a sanity check before planetary missions

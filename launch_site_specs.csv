@@ -1,0 +1,4 @@
+site_id,name,country,latitude_deg,longitude_deg,elevation_m,typical_azimuth_min_deg,typical_azimuth_max_deg,launch_direction_notes,source,quality_status,notes
+ksc_lc39a,Kennedy Space Center LC-39A,USA,28.6084,-80.6043,3,35,120,Eastward launches benefit from Earth rotation; actual corridor is mission-specific,NASA launch site information,reference,Verify current range and trajectory constraints
+ccsfs_slc40,Cape Canaveral SFS SLC-40,USA,28.5619,-80.5774,3,35,120,Eastward launch corridor over Atlantic Ocean,Space Force launch complex information,reference,Use the launch provider mission profile for final limits
+vandenberg_sfb,Vandenberg Space Force Base,USA,34.7420,-120.5724,100,180,220,Useful for high-inclination and polar launches,Space Force launch site information,reference,Placeholder range values require mission-specific verification

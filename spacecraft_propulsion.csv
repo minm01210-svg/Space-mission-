@@ -1,0 +1,4 @@
+system_id,name,propellant,engine_type,thrust_n,isp_s,dry_mass_kg,propellant_mass_kg,engine_count,power_w,burn_duration_s,minimum_impulse_bit_n_s,source,quality_status,notes
+team_chemical_main,Team chemical main engine,storable or cryogenic,chemical,,,,,,,,team design input,required,Fill with the actual spacecraft engine data
+team_electric_cruise,Team electric cruise thruster,xenon,electric,,,,,,,,team design input,required,Use for low-thrust cruise only; include power and duty cycle
+next,NEXT,xenon,gridded ion,0.236,4190,13.5,,,,,NASA NTRS 20090004685,reference,Reference thruster; mission performance depends on power processing and duty cycle

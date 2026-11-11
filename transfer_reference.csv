@@ -1,0 +1,4 @@
+transfer_id,origin_orbit_id,destination_orbit_id,transfer_type,departure_dv_m_s,arrival_dv_m_s,total_dv_m_s,transfer_time_days,launch_window_recurrence_days,assumptions,source
+earth_leo400_moon100,leo400,moon100,patched_conic,3084,821,3904.58,,,400 km Earth orbit to 100 km lunar orbit; no operations allowance; idealized,derived from verified GM and radii
+earth_leo400_mars400_1sol,leo400,mars400_1sol,heliocentric Hohmann plus capture,3570.60,2080.69,5651.29,258.87,779.94,Circular coplanar Hohmann approximation; no operations allowance,derived from verified GM and orbital elements
+earth_leo400_earth_geo,leo400,earth_geo,hohmann,2399.47,1457.22,3856.69,0.2204,,Coplanar circular Earth LEO to GEO; reference example,derived from verified Earth GM and radii
