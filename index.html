@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission Path Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>Mission Path Lab</span></div>
+      <div class="topbar-meta"><span class="live-dot"></span> Interactive mission sizing</div>
+    </header>
+
+    <main class="layout">
+      <aside class="control-panel" aria-label="Mission inputs">
+        <div class="eyebrow">MISSION DESIGNER</div>
+        <h1>Can this spacecraft reach the goal?</h1>
+        <p class="intro">Combine a spacecraft specification with a destination model, then run the ideal transfer check.</p>
+
+        <section class="input-section">
+          <div class="section-heading"><span class="step-number">01</span><div><h2>Spacecraft</h2><p>Verified-style inputs</p></div></div>
+          <label>Preset spacecraft<select id="craftPreset" class="select-control"><option value="custom">Custom spacecraft</option><option value="marsScout" selected>Mars Scout · chemical stage</option><option value="next">NEXT · electric propulsion</option><option value="nstar">NSTAR · electric propulsion</option><option value="bpt">BPT-4000 · Hall thruster</option></select></label>
+          <div class="field-grid">
+            <label>Dry mass <span>kg</span><input id="dryMass" type="number" min="1" step="1" value="420"></label>
+            <label>Propellant <span>kg</span><input id="propMass" type="number" min="0" step="1" value="1260"></label>
+            <label>Specific impulse <span>s</span><input id="isp" type="number" min="1" step="1" value="330"></label>
+            <label>Engine thrust <span>N</span><input id="thrust" type="number" min="0" step="0.001" value="5200"></label>
+          </div>
+          <div class="field-grid secondary-fields">
+            <label>Reference area <span>m²</span><input id="area" type="number" min="0" step="0.1" value="4"></label>
+            <label>Drag coefficient <span>Cd</span><input id="cd" type="number" min="0" step="0.01" value="1.2"></label>
+          </div>
+        </section>
+
+        <section class="input-section">
+          <div class="section-heading"><span class="step-number">02</span><div><h2>Destination</h2><p>Patched-conic target</p></div></div>
+          <label>Mission goal<select id="destination" class="select-control"><option value="leo">Earth orbit · 400 km</option><option value="moon">Moon orbit · 100 km</option><option value="mars" selected>Mars orbit · 400 km × 1 sol</option><option value="marsLanding">Mars surface · entry estimate</option></select></label>
+          <div class="destination-note" id="destinationNote">Mars transfer · 259 day nominal Hohmann case</div>
+        </section>
+
+        <button id="runBtn" class="run-button" type="button"><span>Run mission check</span><span>→</span></button>
+        <p class="model-note"><strong>Model boundary:</strong> ideal rocket equation and patched-conic reference values. Drag, heating, weather, guidance, and landing hardware are not simulated.</p>
+      </aside>
+
+      <section class="workspace" aria-label="Mission result">
+        <div class="workspace-head"><div><div class="eyebrow">MISSION OUTCOME</div><h2 id="resultTitle">Mars Scout is ready for review</h2><p id="resultSubtitle">Tune the inputs, then run the mission check to validate the transfer budget.</p></div><div class="status-pill" id="statusPill"><span></span><b>READY</b></div></div>
+
+        <div class="metrics-grid">
+          <article class="metric-card"><span>Available Δv</span><strong id="availableDv">4,936</strong><em>m/s · ideal</em></article>
+          <article class="metric-card"><span>Goal requirement</span><strong id="requiredDv">5,651</strong><em>m/s · reference</em></article>
+          <article class="metric-card"><span>Mission reserve</span><strong id="reserveDv">−715</strong><em id="reserveLabel">m/s · shortfall</em></article>
+          <article class="metric-card"><span>Transfer time</span><strong id="transferTime">259</strong><em id="transferUnit">days · nominal</em></article>
+        </div>
+
+        <section class="visual-card">
+          <div class="visual-head"><div><h3>Transfer path</h3><p id="pathCaption">Earth departure → Mars capture</p></div><div class="animation-controls"><button class="icon-button" id="pauseBtn" type="button" aria-label="Pause animation">Ⅱ</button><button class="icon-button" id="resetBtn" type="button" aria-label="Reset animation">↺</button></div></div>
+          <div class="orbit-stage"><svg id="orbitSvg" viewBox="0 0 900 390" role="img" aria-labelledby="orbitTitle orbitDesc"><title id="orbitTitle">Animated interplanetary transfer path</title><desc id="orbitDesc">A spacecraft travels from the blue origin orbit to the selected destination orbit.</desc><defs><radialGradient id="spaceGlow"><stop offset="0" stop-color="#3d5a9d" stop-opacity=".35"/><stop offset="1" stop-color="#08101f" stop-opacity="0"/></radialGradient><radialGradient id="sunGradient"><stop offset="0" stop-color="#fff5b2"/><stop offset=".4" stop-color="#ffc96b"/><stop offset="1" stop-color="#de6e39"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="900" height="390" fill="#080f1d"/><ellipse cx="450" cy="200" rx="330" ry="138" fill="url(#spaceGlow)"/><g id="orbitRings"></g><path id="transferArc" class="transfer-arc" d="M 146 200 Q 450 38 754 200"/><circle cx="450" cy="200" r="34" fill="url(#sunGradient)" filter="url(#glow)"/><circle cx="450" cy="200" r="12" fill="#fff2a1"/><g id="bodies"></g><g id="craftMarker"><circle r="8" fill="#8ff0d0" filter="url(#glow)"/><circle r="3" fill="#fff"/></g></svg><div class="stage-legend"><span><i class="legend-dot origin"></i> Earth orbit</span><span><i class="legend-dot destination"></i><b id="legendDestination">Mars</b></span><span><i class="legend-line"></i> ideal transfer</span></div></div>
+        </section>
+
+        <section class="analysis-grid">
+          <article class="analysis-card"><div class="card-title"><h3>Mission checks</h3><span id="checkCount">2 / 3</span></div><div class="check-list" id="checkList"></div></article>
+          <article class="analysis-card"><div class="card-title"><h3>What the model says</h3><span class="badge">TRACEABLE</span></div><p id="modelSummary">This run uses the ideal rocket equation with your spacecraft masses and specific impulse. The transfer target comes from a patched-conic reference case.</p><div class="formula">Δv = Isp · g₀ · ln(m₀ / m₁)</div></article>
+        </section>
+        <footer class="footer-note">Built for exploratory mission design · Always validate final results with higher-fidelity trajectory, atmosphere, and vehicle models.</footer>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
